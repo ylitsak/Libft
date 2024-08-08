@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:20:37 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/01 11:25:02 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 10:45:38 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	const char	*endptr;
 	char		*trimptr;
 
+	if (!s1)
+		return (NULL);
 	endptr = s1 + ft_strlen(s1) - 1;
 	j = 0;
 	while (*s1 != '\0' && trimchars(*s1, set))

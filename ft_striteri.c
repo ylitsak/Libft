@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 11:28:01 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/01 11:54:25 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:04:42 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t			len;
 	size_t			i;
-	unsigned int	index;
 
+	if (!s || !f)
+		return ;
 	len = ft_strlen(s);
 	i = 0;
-	index = 0;
 	while (i < len)
 	{
-		f(index, &s[i]);
+		f(i, &s[i]);
 		i++;
-		index++;
 	}
 	return ;
 }

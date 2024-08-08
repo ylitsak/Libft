@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:06:17 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/07 09:50:23 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 09:20:33 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (char *)dest;
 	s = (char *)src;
-	if (d == s)
-		return (d);
+	if (!d && !s)
+		return (dest);
 	if (d < s)
 	{
 		while (i < n)
@@ -38,5 +38,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			d[n] = s[n];
 		}
 	}
-	return (d);
+	return (dest);
 }

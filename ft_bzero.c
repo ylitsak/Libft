@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:27:06 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/07 09:49:17 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 10:12:51 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_bzero(void *s, size_t n)
 		return ;
 	while (n > 0)
 	{
-		((char *)s)[i] = '\0';
+		((unsigned char *)s)[i] = 0;
 		i++;
 		n--;
 	}

@@ -6,13 +6,13 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 10:18:30 by saylital          #+#    #+#             */
-/*   Updated: 2024/04/18 10:41:08 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/08 11:36:13 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int n)
 {
-	if (n >= 65 && n <= 90)
+	if ((unsigned char)n >= 65 && (unsigned char)n <= 90)
 	{
 		return (n + 32);
 	}

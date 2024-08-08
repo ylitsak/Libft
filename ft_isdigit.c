@@ -6,13 +6,15 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 16:34:37 by saylital          #+#    #+#             */
-/*   Updated: 2024/04/18 10:52:50 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/08 11:32:50 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int n)
 {
-	if (n >= 48 && n <= 57)
+	if (n > 255)
+		return (0);
+	if ((unsigned char)n >= 48 && (unsigned char)n <= 57)
 	{
 		return (1);
 	}

@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:20:28 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/02 15:08:43 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/08 12:33:13 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 		haystack++;
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 16:02:47 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/08 09:34:34 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:19:35 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,16 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	index_tracker;
+	size_t	i;
 
-	i = 0;
-	index_tracker = -1;
-	while (s[i] != '\0')
+	i = ft_strlen(s);
+	while (i > 0)
 	{
 		if (s[i] == (char)c)
-			index_tracker = i;
-		i++;
+			return ((char *)&s[i]);
+		i--;
 	}
 	if (s[i] == (char)c)
 		return ((char *)&s[i]);
-	if (index_tracker != -1)
-		return ((char *)&s[index_tracker]);
 	return (NULL);
 }

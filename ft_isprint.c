@@ -6,13 +6,15 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 10:06:37 by saylital          #+#    #+#             */
-/*   Updated: 2024/04/19 16:02:27 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/08 11:34:33 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int n)
 {
-	if (n >= 32 && n <= 126)
+	if (n > 255)
+		return (0);
+	if ((unsigned char)n >= 32 && (unsigned char)n <= 126)
 	{
 		return (1);
 	}

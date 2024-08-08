@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 11:19:14 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/08 09:32:23 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 11:39:06 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int	calculate_length(int n)
 static char	*number_to_string(char *numbers, long num, int len)
 {
 	long	convert_num;
-	int		starting_index;
+	long	starting_index;
 
 	numbers[len] = '\0';
 	starting_index = len - 1;
@@ -76,7 +76,7 @@ char	*ft_itoa(int n)
 		nums_array = set_zero();
 		return (nums_array);
 	}
-	num_len = calculate_length(n);
+	num_len = calculate_length(number);
 	nums_array = malloc((num_len + 1) * sizeof(char));
 	if (nums_array == NULL)
 		return (NULL);

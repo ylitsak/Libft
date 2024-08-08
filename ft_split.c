@@ -6,7 +6,7 @@
 /*   By: saylital <saylital@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 09:14:48 by saylital          #+#    #+#             */
-/*   Updated: 2024/05/07 09:09:54 by saylital         ###   ########.fr       */
+/*   Updated: 2024/05/13 09:29:12 by saylital         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,11 +70,9 @@ static char	**word_splitter(char const *s, char **ptrarray, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t		i;
 	size_t		total_words;
 	char		**word_array;
 
-	i = 0;
 	if (!s)
 		return (NULL);
 	total_words = word_counter(s, c);
